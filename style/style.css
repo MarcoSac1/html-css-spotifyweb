@@ -101,8 +101,9 @@ section.playlist > article.centered{
 }
 
 article > img{
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
+
 
 h3{
     margin-bottom: .5rem;
