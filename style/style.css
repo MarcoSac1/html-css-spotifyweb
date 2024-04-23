@@ -22,6 +22,12 @@ aside{
     height:calc(100vh - 76px);
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 aside .mainlogo{
     width: 10rem;
     margin-top: 1rem;
@@ -92,6 +98,11 @@ div.flex nav ul{
     margin-bottom: 8rem;
 }
 
+div.row{
+    justify-content: space-between;
+    
+}
+
 .playlist{
     background-color: #141922;
     position: absolute;
@@ -103,7 +114,7 @@ div.flex nav ul{
 }
 
 section.playlist > article.centered{
-    width: calc(100vw/6);
+    width: calc((100vw/6) - 12rem);
     
 }
 
@@ -114,6 +125,10 @@ div.flex{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+div.row article.centered{
+    max-width: 300px;
 }
 
 article > img{
@@ -162,6 +177,37 @@ footer ul{
 .small{
     width: 2.5rem;
 }
-.reproduction{
-    
+div.reproduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.riproduzione {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.bar{
+    position: relative;
+    background-color: #5a5a5a;
+    height: 5px;
+    width: 400px;
+    border-radius: 25px;
+    align-items:center;
+    justify-content: center;
+    margin: 1rem 1.5rem;
+}
+
+.ligth{
+    position:absolute;
+    background-color: #c1c1c1;
+    height: 5px;
+    width: 80px;
+    border-radius: 25px;
+    align-items:center;
+    justify-content: center;
+    margin: 1rem 1.5rem;
+    left: 0;
 }

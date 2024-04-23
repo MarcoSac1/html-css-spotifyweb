@@ -14,50 +14,52 @@
 </head>
 <body>
     <main>
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        <i><img class="mainlogo" src="./img/logo.svg" alt="mainlogo"></i>
-                    </li>
-                    <li>
-                        <i><img class="icon" src="./img/home.svg" alt="home-icon"></i>
-                        Home
-                    </li>
-                    <li><i><img class="icon" src="./img/search.svg" alt="search"></i>
-                        Cerca
-                    </li>
-                    <li>
-                        <i><img class="icon" src="./img/libreria.svg" alt="library-icon"></i>
-                        La tua libreria
-                    </li>
-                </ul>
-                <ul>
-                    <li class="white">
-                        PLAYLIST
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-square-plus"></i>
-                        Crea Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                </ul>
-            </nav>
-            <div>
+        <aside class="container">
+            <div class="item">
+                <nav>
+                    <ul>
+                        <li>
+                            <i><img class="mainlogo" src="./img/logo.svg" alt="mainlogo"></i>
+                        </li>
+                        <li>
+                            <i><img class="icon" src="./img/home.svg" alt="home-icon"></i>
+                            Home
+                        </li>
+                        <li><i><img class="icon" src="./img/search.svg" alt="search"></i>
+                            Cerca
+                        </li>
+                        <li>
+                            <i><img class="icon" src="./img/libreria.svg" alt="library-icon"></i>
+                            La tua libreria
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="white">
+                            PLAYLIST
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-square-plus"></i>
+                            Crea Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="item">
                 <ul>
                     <li >
                         <i>
@@ -75,8 +77,6 @@
                 </ul>
             </div>
         </aside>
-        <section class="container">
-        </section>
         <section class="container big playlist">
             <div class="upgrade flex">
                 <button>EFFETTUA L'UPGRADE</button>
@@ -118,7 +118,7 @@
                 </nav>
             </div>
             <h2 class="white">Recently played</h2>
-            <div class="flex ">
+            <div class="row flex ">
                 <article class="centered">
                     <img src="./img/metal_lifting.jpg" alt="img-playlist">
                     <h3 class="white">Heavy Metal</h3>
@@ -144,7 +144,7 @@
                     <h3 class="white">A cure for wellness</h3>
                     <p>subtitle</p>
                 </article>
-                <article class="centered">
+                <article class=" centered">
                     <img src="./img/sinister.jpeg" alt="img-playlist">
                     <h3 class="white">sinister</h3>
                     <p>subtitle</p>
@@ -204,23 +204,34 @@
                 </li>
             </ul>
             <!-- riproduzione -->
-            <ul class="reproduction">
-                <li class="white">
-                    <i class="fa-solid fa-repeat"></i>
-                </li>
-                <li class="white">
-                    <i class="fa-solid fa-backward-step"></i>
-                </li>
-                <li class="white">
-                    <i class="fa-solid fa-play"></i>
-                </li>
-                <li class="white">
-                    <i class="fa-solid fa-forward-step"></i>
-                </li>
-                <li class="white">
-                    <i class="fa-solid fa-play"></i>
-                </li>
-            </ul>
+            <div class="container">
+                <div class="reproduction">
+                    <ul>
+                        <li class="white">
+                            <i class="fa-solid fa-repeat"></i>
+                        </li>
+                        <li class="white">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+                        <li class="white">
+                            <i class="fa-solid fa-play"></i>
+                        </li>
+                        <li class="white">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </li>
+                        <li class="white">
+                            <i class="fa-solid fa-play"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="riproduzione">
+                    <p class="time white ">0:25</p>
+                    <div class="time bar">
+                        <div class="light"></div>
+                    </div>
+                    <p class="time white">4:35</p>
+                </div>
+            </div>
             <!-- setting -->
             <ul>
                 <li class="white">
