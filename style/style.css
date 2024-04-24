@@ -137,6 +137,7 @@ div.row{
 div.flex{
     padding: 1rem;
     flex-wrap: wrap;
+    font-weight: bolder;
 }
 .centered{
     display: flex;
@@ -145,8 +146,8 @@ div.flex{
 }
 
 div.row article.centered{
-    width: calc((100% - 120px) / 6 );
-    padding: 0 20px;
+    width: calc((100% - 6rem) / 6 );
+    padding: 0 1rem;
 }
 
 div.row2 article.centered{
@@ -156,7 +157,7 @@ div.row2 article.centered{
 
 article > img{
     margin: 1rem;
-    
+    width: 100%;
 }
 
 .margin-left{
@@ -254,3 +255,37 @@ div.reproduction{
 .padding-right{
     padding-right: 0;
 }
+
+@media screen and (max-width: 992px){
+    
+    div.row article.centered{
+        width: calc((100% / 4 ) - 3rem);
+        padding: 0 1rem;
+        
+    }
+    
+    div.row{
+        flex-wrap: wrap;
+        
+    }
+
+    article > img{
+        
+    }
+
+    div.flex.centered{
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 576px){
+    
+}
+
