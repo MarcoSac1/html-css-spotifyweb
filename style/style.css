@@ -54,7 +54,7 @@ aside .mainlogo{
     color:#d2d2d2;
 } */
 
-aside ul > li {
+aside ul > li  {
     padding-left: 1rem;
     padding-bottom: 1rem;
     display: flex;
@@ -67,7 +67,6 @@ li{
 
 div.item nav
 li > i{
-    font-size: 45px;
     margin-right:.5rem;
 }
 
@@ -80,6 +79,9 @@ i > img{
     margin-right: .5rem;
 }
 
+#plussquare{
+    font-size: 45px;
+}
 hr{
     margin:1rem solid 1px;
 }
@@ -107,6 +109,7 @@ button{
     border-color: white;
     border-radius: 25px;
     padding: .6rem 2rem;
+    margin: 1rem;
     
 }
 
@@ -118,10 +121,7 @@ div.flex nav ul{
     margin-bottom: 8rem;
 }
 
-div.row{
-    justify-content: space-between;
-    
-}
+
 
 .playlist{
     background-color: #141922;
@@ -133,11 +133,13 @@ div.row{
     height: calc(100vh - 106px);
 }
 
-
-div.flex{
-    padding: 1rem;
-    flex-wrap: wrap;
+.bold{
     font-weight: bolder;
+}
+div.flex{
+    /* padding: 1rem; */
+    /* flex-wrap: wrap; */
+    
 }
 .centered{
     display: flex;
@@ -146,7 +148,7 @@ div.flex{
 }
 
 div.row article.centered{
-    width: calc((100% - 6rem) / 6 );
+    width: calc((100% - 1rem) / 6 );
     padding: 0 1rem;
 }
 
@@ -207,7 +209,7 @@ footer ul{
 }
 
 .small{
-    width: 2.5rem;
+    width:50px;
 }
 
 div.reproduction{
@@ -257,12 +259,12 @@ div.riproduzione p:nth-last-child(1) {
     width: 8vw;
 }
 
-.small{
-    width: 3vw;
-}
-
 .padding-right{
     padding-right: 0;
+}
+
+.logo-small{
+    display: none;
 }
 
 @media screen and (max-width: 992px){
@@ -294,6 +296,10 @@ div.riproduzione p:nth-last-child(1) {
 
     footer {
         width:100vw;
+    }
+
+    .small{
+        width:50px;
     }
 }
 
@@ -328,6 +334,10 @@ div.riproduzione p:nth-last-child(1) {
     footer {
         width:100vw;
     }
+
+    .small{
+        width:50px;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -349,7 +359,7 @@ div.riproduzione p:nth-last-child(1) {
     }
 
     div.row article.centered{
-        width: calc((100% / 2 ) -80px );
+        width: calc(100% / 2 );
         padding: 0 1rem;
         justify-content: flex-start;
     }
@@ -375,10 +385,11 @@ div.riproduzione p:nth-last-child(1) {
         position: absolute;
         top: 0;
         justify-content: end;
+    }
 
     .centered > nav{
         align-items: center;
-        /* width: calc( 100% / 3 );  chiedere a riccardo */
+        /* width: calc( 100% / 4 );  chiedere a riccardo */
         font-size: 12px;
         flex-wrap: wrap;
         
@@ -392,4 +403,23 @@ div.riproduzione p:nth-last-child(1) {
         width:100vw;
     }
 
+    aside .mainlogo {
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        height: 50px;
+        
+    }
+
+    .small{
+        width:50px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
 }
