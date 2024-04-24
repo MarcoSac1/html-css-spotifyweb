@@ -339,6 +339,8 @@ div.riproduzione p:nth-last-child(1) {
         flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
+        padding-left: 1.5rem;
+        text-align: center;
         }
 
     div.flex nav ul{
@@ -385,6 +387,8 @@ div.riproduzione p:nth-last-child(1) {
         flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
+        padding-left: 1.5rem;
+        text-align: center;
         }
 
     div.flex nav ul{
