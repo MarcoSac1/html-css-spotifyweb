@@ -222,6 +222,15 @@ div.reproduction{
     justify-content: space-around
 }
 
+div.riproduzione p{
+    font-size: 10px;
+    
+}
+
+div.riproduzione p:nth-last-child(1) {
+    padding-right: 1rem;
+}
+
 .bar{
     position: relative;
     background-color: #5a5a5a;
@@ -289,10 +298,98 @@ div.reproduction{
 }
 
 @media screen and (max-width: 768px){
+    div.row article.centered{
+        width: calc(100% / 2 );
+        padding: 0 1rem;
+        justify-content: flex-start;
+    }
     
+    div.row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    article > img{
+        width: 100%;
+    }
+
+    .centered > nav{
+        align-items: center;
+        /* width: calc( 100% / 3 );  chiedere a riccardo */
+        font-size: 12px;
+        flex-wrap: wrap;
+        
+    }
+
+    div.row2 article.centered{
+        width: calc(50% / 2);
+    }
+
+    footer {
+        width:100vw;
+    }
 }
 
 @media screen and (max-width: 576px){
     
-}
+    aside{
+        width: 80px;
+    }
+    
+    aside p{
+        display: none;
+    }
 
+    aside hr{
+        display: none;
+    }
+
+    #plussquare{
+        display: none;
+    }
+
+    div.row article.centered{
+        width: calc((100% / 2 ) -80px );
+        padding: 0 1rem;
+        justify-content: flex-start;
+    }
+    
+    div.row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    article > img{
+        width: 100%;
+    }
+
+    .playlist{
+        position: absolute;
+        width: calc(100vw - 80px);
+        left: 80px;
+    }
+
+    .upgrade{
+        width: calc(100vw - 80px);
+        position: absolute;
+        top: 0;
+        justify-content: end;
+
+    .centered > nav{
+        align-items: center;
+        /* width: calc( 100% / 3 );  chiedere a riccardo */
+        font-size: 12px;
+        flex-wrap: wrap;
+        
+    }
+
+    div.row2 article.centered{
+        width: calc(50% / 2);
+    }
+
+    footer {
+        width:100vw;
+    }
+
+}
