@@ -226,7 +226,7 @@ div.reproduction{
     position: relative;
     background-color: #5a5a5a;
     height: 5px;
-    width: 400px;
+    width: 25vw;
     border-radius: 25px;
     align-items:center;
     justify-content: center;
@@ -237,7 +237,7 @@ div.reproduction{
     position:absolute;
     background-color: #c1c1c1;
     height: 5px;
-    width: 80px;
+    width: 5vw;
     border-radius: 25px;
     align-items:center;
     justify-content: center;
@@ -245,11 +245,11 @@ div.reproduction{
 }
 
 .time.small{
-    width: 120px;
+    width: 8vw;
 }
 
 .small{
-    width: 50px;
+    width: 3vw;
 }
 
 .padding-right{
@@ -257,27 +257,34 @@ div.reproduction{
 }
 
 @media screen and (max-width: 992px){
-    
+    /* chiedere a jacopo header nav riposizionamento  */
     div.row article.centered{
-        width: calc((100% / 4 ) - 3rem);
+        width: calc(100% / 4 );
         padding: 0 1rem;
-        
+        justify-content: flex-start;
     }
     
     div.row{
         flex-wrap: wrap;
-        
+        justify-content: flex-start;
     }
 
     article > img{
-        
+        width: 100%;
     }
 
     div.flex.centered{
         align-items: center;
         width: 100%;
         font-size: 12px;
-        
+    }
+
+    div.row2 article.centered{
+        width: calc(50% / 2);
+    }
+
+    footer {
+        width:100vw;
     }
 }
 
