@@ -150,11 +150,13 @@ div.flex{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 div.row article.centered{
     width: calc((100% - 1rem) / 6 );
     padding: 0 1rem;
+
 }
 
 article > img{
@@ -168,11 +170,11 @@ article > img{
 
 h2{
     margin-bottom: .6rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 section.big > p{
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .circle{
@@ -237,7 +239,7 @@ div.riproduzione p:nth-last-child(1) {
     position: relative;
     background-color: #5a5a5a;
     height: 5px;
-    width: 25vw;
+    width: 35vw;
     border-radius: 25px;
     align-items:center;
     justify-content: center;
@@ -248,7 +250,7 @@ div.riproduzione p:nth-last-child(1) {
     position:absolute;
     background-color: #c1c1c1;
     height: 5px;
-    width: 5vw;
+    width: 10vw;
     border-radius: 25px;
     align-items:center;
     justify-content: center;
@@ -256,7 +258,11 @@ div.riproduzione p:nth-last-child(1) {
 }
 
 .time.small{
-    width: 8vw;
+    width: 10vw;
+}
+
+.light.small{
+    width: 4vw;
 }
 
 .padding-right{
@@ -268,7 +274,12 @@ div.riproduzione p:nth-last-child(1) {
 }
 
 @media screen and (max-width: 992px){
-    
+    nav ul li p{
+        
+        text-align: center;
+        white-space: nowrap;
+    }
+
     div.row article.centered{
         width: calc(100% / 4 );
         padding: 0 1rem;
@@ -358,8 +369,24 @@ div.riproduzione p:nth-last-child(1) {
         width:100vw;
     }
 
+    footer div.container{
+        width: 40%;
+    }
+
     .small{
         width:50px;
+    }
+
+    .time.small{
+        width: 9vw;
+    }
+
+    .padding-0{
+        padding-right: 0;
+    }
+
+    footer li{
+        padding-right: .7rem;
     }
 }
 
@@ -381,6 +408,11 @@ div.riproduzione p:nth-last-child(1) {
         display: none;
     }
 
+    nav ul li p{
+        font-size: 12px;
+        text-align: center;
+        white-space: nowrap;
+    }
     div.flex nav ul li {
         width: calc( 100% / 4 );
         margin-bottom: 1rem;
@@ -460,5 +492,21 @@ div.riproduzione p:nth-last-child(1) {
 
     p{
         font-size: 1rem;
+    }
+
+    footer li{
+        padding-right: .5rem;
+    }
+
+    .time.small{
+        width: 6.5vw;
+    }
+
+    footer div.container {
+    width: 40%;
+    }
+
+    footer li .white{
+        font-weight: 300;
     }
 }
