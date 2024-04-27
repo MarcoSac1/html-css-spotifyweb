@@ -164,8 +164,8 @@ article > img{
     width: 100%;
 }
 
-.margin-left{
-    /* margin-left: -1rem; */
+div.margin ul li{
+    padding-left: 0;
 }
 
 h2{
@@ -509,4 +509,29 @@ div.riproduzione p:nth-last-child(1) {
     footer li .white{
         font-weight: 300;
     }
+}
+/* hover section */
+
+aside ul li:hover{
+    color: white;
+    font-weight: bold;
+    border-left: solid #a8f82d 5px;
+}
+
+div.centered nav ul li p:hover{
+    color: white;
+    border-bottom: solid #a8f82d 3px;
+    padding-bottom: .5rem;
+}
+
+div.upgrade button:hover{
+    padding: .8rem 2.2rem;
+}
+
+article:hover > img{
+    
+}
+
+ul li.white:hover{
+    font-size: 1.2rem;
 }
